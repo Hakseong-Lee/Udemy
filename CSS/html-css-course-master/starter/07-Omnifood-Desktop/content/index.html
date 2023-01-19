@@ -1,0 +1,467 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="description" content="Omnifood Page">
+    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="queries.css" />
+    <link rel="icon" href="img/favicon.png">
+    <link rel="apple-touch-icon" href=""/>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Rubik:wght@400;500;700&display=swap"
+      rel="stylesheet"
+    />
+    <script
+      type="module"
+      src="https://unpkg.com/ionicons@4.5.10-0/dist/ionicons/ionicons.esm.js"
+    ></script>
+    <script
+      nomodule=""
+      src="https://unpkg.com/ionicons@4.5.10-0/dist/ionicons/ionicons.js"
+    ></script>
+<script defer src="js/js.js"></script>
+    <title>Omnifood</title>
+  </head>
+  <body>
+    <header class="header">
+      <a href="#">
+      <img class="logo" alt="logo" src="img/omnifood-logo.png" />
+      </a>
+      <nav class="main-nav">
+        <ul class="main-nav-list">
+          <li><a class="main-nav-link" href="#how">How it works</a></li>
+          <li><a class="main-nav-link" href="#meals">Meals</a></li>
+          <li><a class="main-nav-link" href="#test">Testimonials</a></li>
+          <li><a class="main-nav-link" href="#price">Pricing</a></li>
+          <li><a class="main-nav-link nav-cta" href="#cta">Try for free</a></li>
+        </ul>
+      </nav>
+
+      <button class="btn-mobile-nav">
+        <ion-icon class="icon-mobile-nav" name="menu"></ion-icon>
+        <ion-icon class="icon-mobile-nav" name="close"></ion-icon>
+      </button>
+    </header>
+    <main>
+      <section class="section-hero">
+        <div class="hero">
+          <div class="hero-text-box">
+            <h1 class="heading-primary">건강한 한끼가 매일 당신의 집 앞으로</h1>
+            <p class="hero-text">
+              당신의 입맞에 맞춘 건강한 한끼가 당신의 건강을 챙겨드립니다. 365일 매일 신선하게
+              당신의 집 앞으로 배달됩니다.
+            </p>
+            <a href="#cta" class="btn btn--full margin-right-sm">구독하기</a>
+            <a href="#how" class="btn btn--outline">더 알아보기&darr;</a>
+            <div class="deliver-meals">
+              <div class="delivered-imgs">
+                <img src="img/customers/customer-1.jpg" alt="customer" />
+                <img src="img/customers/customer-2.jpg" alt="customer" />
+                <img src="img/customers/customer-3.jpg" alt="customer" />
+                <img src="img/customers/customer-4.jpg" alt="customer" />
+                <img src="img/customers/customer-5.jpg" alt="customer" />
+                <img src="img/customers/customer-6.jpg" alt="customer" />
+              </div>
+              <p class="delivered-text"><span>250,000+</span>식사가 매년 배달됩니다!</p>
+            </div>
+          </div>
+          <div class="hero-img-box">
+            <img src="img/hero.png" class="hero-img" alt="Woman enjoying food" />
+          </div>
+        </div>
+      </section>
+      <section class="section-featured">
+        <div class="container">
+          <h2 class="heading-featured-in">As featured in</h2>
+          <div class="logos">
+            <img src="img/logos/techcrunch.png" alt="logo" />
+            <img src="img/logos/business-insider.png" alt="logo" />
+            <img src="img/logos/the-new-york-times.png" alt="logo" />
+            <img src="img/logos/forbes.png" alt="logo" />
+            <img src="img/logos/usa-today.png" alt="logo" />
+          </div>
+        </div>
+      </section>
+      <section class="section-how" id="how">
+        <div class="container">
+          <span class="subheading">How it works</span>
+          <h2 class="heading-secondary">건강한 식단을 위한 간단한 3단계</h2>
+        </div>
+        <div class="container grid grid--2-cols grid-center-v">
+          <!-- Step 01 -->
+          <div class="step-text-box">
+            <p class="step-number">01</p>
+            <h3 class="heading-tertiary">무엇을 좋아하는지 말해주세요!</h3>
+            <p class="step-description">
+              무엇을 먹을지 고민하며 시간을 낭비하지마세요! Omnifood AI가 당신의 입맛에 딱 맞는 주간
+              식단을 제공합니다. 한끼 식사에 필요한 영양소와 비타민, 맛까지 모두 챙겨드립니다!
+            </p>
+          </div>
+          <div class="before">
+            <div class="step-img-box">
+              <img src="img/app/app-screen-1.png" class="step-img" alt="Iphone app" />
+            </div>
+          </div>
+          <!-- Step 02 -->
+          <div class="before">
+            <div class="step-img-box">
+              <img src="img/app/app-screen-2.png" class="step-img" alt="Iphone app" />
+            </div>
+          </div>
+          <div class="step-text-box">
+            <p class="step-number">02</p>
+            <h3 class="heading-tertiary">식단이 어땠는지 말해주세요!</h3>
+            <p class="step-description">
+              매주 Omnifood AI가 당신의 식단을 관리합니다. 원하는 재료로 교환하고 식단을
+              선택해보세요! 당신의 레시피도 추가할 수 있습니다.
+            </p>
+          </div>
+
+          <!-- Step 03 -->
+          <div class="step-text-box">
+            <p class="step-number">03</p>
+            <h3 class="heading-tertiary">음식을 받을 시간을 정해주세요!</h3>
+            <p class="step-description">
+              최고의 쉐프들이 매일 당신이 선택한 음식을 요리합니다. 음식은 조리 후 당신에게 필요한
+              시간에 배달됩니다. 매일 다른 시간과 다른 장소로 바꿀 수 있습니다.
+            </p>
+          </div>
+          <div class="before">
+            <div class="step-img-box">
+              <img src="img/app/app-screen-3.png" class="step-img" alt="Iphone app" />
+            </div>
+          </div>
+        </div>
+      </section>
+      <section class="section-meals" id="meals">
+        <div class="container center-text">
+          <span class="subheading">Meals</span>
+          <h2 class="heading-secondary">+5000가지 이상의 다양한 레시피</h2>
+
+          <div class="conatiner grid grid--3-cols margin-bottom-md">
+            <div class="meal">
+              <img src="img/meals/meal-1.jpg" class="meal-img" alt="Gyozas" />
+              <div class="meal-content">
+                <span class="tag tag--vegetarian">#Vegetarian</span>
+                <p class="meal-title">일본식 교자</p>
+
+                <ul class="meal-attributes">
+                  <li class="meal-attribute">
+                    <ion-icon class="meal-icon" name="flame"></ion-icon><strong>650</strong> 칼로리
+                  </li>
+                  <li class="meal-attribute">
+                    <ion-icon class="meal-icon" name="speedometer"></ion-icon>영양 점수&reg;
+                    <strong>74</strong>
+                  </li>
+                  <li class="meal-attribute">
+                    <ion-icon class="meal-icon" name="star-outline"></ion-icon
+                    ><strong>4.9</strong> 평점 (537)
+                  </li>
+                </ul>
+              </div>
+            </div>
+            <div class="meal">
+              <img src="img/meals/meal-2.jpg" class="meal-img" alt="Gyozas" />
+              <div class="meal-content">
+                <div class="meal-tag">
+                  <span class="tag tag--vegan">#vegan</span>
+                  <span class="tag tag--paleo">#paleo</span>
+                </div>
+                <p class="meal-title">아보카도 셀러드</p>
+
+                <ul class="meal-attributes">
+                  <li class="meal-attribute">
+                    <ion-icon class="meal-icon" name="flame"></ion-icon><strong>400</strong> 칼로리
+                  </li>
+                  <li class="meal-attribute">
+                    <ion-icon class="meal-icon" name="speedometer"></ion-icon>영양 점수&reg;
+                    <strong>92</strong>
+                  </li>
+                  <li class="meal-attribute">
+                    <ion-icon class="meal-icon" name="star-outline"></ion-icon
+                    ><strong>4.7</strong> 평점 (537)
+                  </li>
+                </ul>
+              </div>
+            </div>
+            <div class="dites">
+              <h3 class="heading-tertiary">다양한 맞춤식 식단:</h3>
+              <ul class="list">
+                <li class="list-item"><ion-icon class="list-icon" name="checkmark"></ion-icon><sapn>Vegetarian</sapn></li>
+                <li class="list-item"><ion-icon class="list-icon" name="checkmark"></ion-icon><sapn>Vegan</sapn></li>
+                <li class="list-item"><ion-icon class="list-icon" name="checkmark"></ion-icon><sapn>Pescatarian</sapn></li>
+                <li class="list-item"><ion-icon class="list-icon" name="checkmark"></ion-icon><sapn>Gluten-free</sapn></li>
+                <li class="list-item"><ion-icon class="list-icon" name="checkmark"></ion-icon><sapn>Paleo</sapn></li>
+                <li class="list-item"><ion-icon class="list-icon" name="checkmark"></ion-icon><sapn>Keto</sapn></li>
+                <li class="list-item"><ion-icon class="list-icon" name="checkmark"></ion-icon><sapn>Kid-friendly</sapn></li>
+                <li class="list-item"><ion-icon class="list-icon" name="checkmark"></ion-icon><sapn>Low FODMAP</sapn></li>
+                <li class="list-item"><ion-icon class="list-icon" name="checkmark"></ion-icon><sapn>Lactose-free</sapn></li>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="container all-recipes">
+          <a href="#" class="link ">모든 식단 보기&rarr;</a>
+        </div>
+      </section>
+
+      <section class="section-testimonials" id="test">
+        <div class="testimonials-container">
+        <span class="subheading">Testimonials</span>
+        <h2 class="heading-secondary">당신도 분명 반할거에요</h2>
+
+        <div class="testimonials">
+          <figure class="testimonial">
+            <img class="testimonial-img" src="img/customers/dave.jpg" alt="dave pic">
+            <blockquote class="testimonial-text">이번에 벌써 3번째 식사네요! 여기저기서 사먹어 보다가 만들어 먹는건 불편하고 배달시키자니 건강이 걱정이고... 그러다가 한번 먹어봤는데 이제 정착했어요!! 너무 신선하고 맛있네요~</blockquote>
+          <p class="testimonial-name">&mdash; 주*윤</p>
+          </figure>
+
+          <figure class="testimonial">
+            <img class="testimonial-img" src="img/customers/hannah.jpg">
+            <blockquote class="testimonial-text">개별포장되서 배송되어서 먹기 편해요ㅋ 야채도 여러가지 부드러운걸로 되어있어서 맛있게 먹었네요!!</blockquote>
+          <p class="testimonial-name">&mdash; 최*윤</p>
+          </figure>
+
+          <figure class="testimonial">
+            <img class="testimonial-img" src="img/customers/steve.jpg">
+            <blockquote class="testimonial-text">야채 넘~ 싱싱하고 하루 한끼씩 간편하고 넘넘 좋아요 굿^^</blockquote>
+          <p class="testimonial-name">&mdash; 황*남</p>
+          </figure>
+
+          <figure class="testimonial">
+            <img class="testimonial-img" src="img/customers/ben.jpg">
+            <blockquote class="testimonial-text">너무 간편하고 너무 신선해서 그동안 재료 사서 요리했던 귀찮은 과정 전부 안녕하려구요 ㅎㅎ 한번에 먹을 수 있게 오는게 최고네요 계속 사 먹으려구요!</blockquote>
+          <p class="testimonial-name">&mdash; 주*아</p>
+          </figure>
+        </div>
+        </div>
+        <div class="gallery">
+          <figure class="gallery-item">
+            <img src="img/gallery/gallery-1.jpg" alt="Food pic">
+            <!-- <figcaption>Caption</figcaption> -->
+          </figure>
+          <figure class="gallery-item">
+            <img src="img/gallery/gallery-2.jpg" alt="Food pic">
+          </figure>
+          <figure class="gallery-item">
+            <img src="img/gallery/gallery-3.jpg" alt="Food pic">
+          </figure>
+          <figure class="gallery-item">
+            <img src="img/gallery/gallery-4.jpg" alt="Food pic">
+          </figure>
+          <figure class="gallery-item">
+            <img src="img/gallery/gallery-5.jpg" alt="Food pic">
+          </figure>
+          <figure class="gallery-item">
+            <img src="img/gallery/gallery-6.jpg" alt="Food pic">
+          </figure>
+          <figure class="gallery-item">
+            <img src="img/gallery/gallery-7.jpg" alt="Food pic">
+          </figure>
+          <figure class="gallery-item">
+            <img src="img/gallery/gallery-8.jpg" alt="Food pic">
+          </figure>
+          <figure class="gallery-item">
+            <img src="img/gallery/gallery-9.jpg" alt="Food pic">
+          </figure>
+          <figure class="gallery-item">
+            <img src="img/gallery/gallery-10.jpg" alt="Food pic">
+          </figure>
+          <figure class="gallery-item">
+            <img src="img/gallery/gallery-11.jpg" alt="Food pic">
+          </figure>
+          <figure class="gallery-item">
+            <img src="img/gallery/gallery-12.jpg" alt="Food pic">
+          </figure>
+        </div>
+      </section>
+      <section class="section-pricing" id="price">
+        <div class="container">
+        <span class="subheading">Pricing</span>
+        <h2 class="heading-secondary">합리적인 가격으로 건강하게 먹기</h2>
+        </div>
+        <div class="container grid grid--2-cols margin-bottom-md">
+          <div class="pricing-plan princing-plan--starter">
+            <header class="plan-header">
+            <p class="plan-name">Starter</p>
+            <p class="plan-price"><span>$</span>399</p>
+            <p class="plan-text">per month. That's just $13 per meal!</p>
+            </header> 
+            <ul class="list">
+              <li class="list-item">
+                <ion-icon class="list-icon" name="checkmark"></ion-icon>
+                <span>하루에 한끼 제공</span>
+              </li>
+              <li class="list-item">
+                <ion-icon class="list-icon" name="checkmark"></ion-icon>
+                <span>AM 11:00 ~ PM 9:00 까지 </span>
+              </li>
+              <li class="list-item">
+                <ion-icon class="list-icon" name="checkmark"></ion-icon>
+                <span>배달 비용 무료</span>
+              </li>
+              <li class="list-item">
+                <ion-icon class="list-icon" name="close"></ion-icon>
+              </li>
+            </ul>
+            <div class="plan-sing-up">
+            <a href="#" class="btn btn--full margin-right-sm">구독하기</a>
+            </div>
+          </div>
+          <div class="pricing-plan pricing-plan--complete">
+            <header class="plan-header">
+            <p class="plan-name">Complete</p>
+            <p class="plan-price"><span>$</span>649</p>
+            <p class="plan-text">per month. That's just $11 per meal!</p>
+            </header>
+             <ul class="list">
+              <li class="list-item">
+                <ion-icon class="list-icon" name="checkmark"></ion-icon>
+                <span>하루에 <strong>두끼</strong> 제공</span>
+              </li>
+              <li class="list-item">
+                <ion-icon class="list-icon" name="checkmark"></ion-icon>
+                <span><strong>24</strong>시간 가능</span>
+              </li>
+              <li class="list-item">
+                <ion-icon class="list-icon" name="checkmark"></ion-icon>
+                <span>배달 비용 무료</span>
+              </li>
+              <li class="list-item">
+                <ion-icon class="list-icon" name="checkmark"></ion-icon>
+                <span>최신 식단 이용 가능</span>
+              </li>
+            </ul>
+            <div class="plan-sing-up">
+            <a href="#" class="btn btn--full margin-right-sm">구독하기</a>
+            </div>
+          </div>
+        </div>
+        <div class="container grid">
+          <aside class="plan-details">
+            세금 포함 최종 가격입니다. 언제든지 구독을 취소할 수 있습니다.
+          </aside>
+        </div>
+        <div class="container grid grid--4-cols">
+          <div class="feature">
+            <ion-icon class="feature-icon" name="infinite"></ion-icon>
+            <p class="feature-title">요리하지 마세요!</p>
+            <p class="feature-text">Omnifood가 1년 365일 내내 식단을 책임집니다.</p>
+          </div>
+          <div class="feature">
+            <ion-icon class="feature-icon"  name="nutrition"></ion-icon>
+            <p class="feature-title">유기농 재료</p>
+            <p class="feature-text">오로지 국산 유기농 재료로 음식을 만듭니다.</p>
+          </div>
+          <div class="feature">
+            <ion-icon class="feature-icon" name="leaf"></ion-icon>
+            <p class="feature-title">친환경 용기</p>
+            <p class="feature-text">친환경 플라스틱 용기로 환경까지 생각하세요.</p>
+          </div>
+          <div class="feature">
+            <ion-icon class="feature-icon" name="pause"></ion-icon>
+            <p class="feature-title">언제든 멈추세요</p>
+            <p class="feature-text">구독을 취소하는데 아무런 제약이 없습니다.</p>
+          </div>
+
+        </div>
+      </section>
+      <section class="section-cta" id="cta">
+        <div class="container">
+          <div class="cta">
+          <div class="cta-text-box">
+            <h2 class="heading-secondary">
+              첫 식단은 공짜로 즐기세요!
+            </h2>
+            <p class="cta-text">
+              건강하고 맛있는 당신에게 딱 맞는 식단이 당신을 기다립니다. 오늘부터 건강하게 식사를 즐기세요. 언제든지 취소하거나 멈출 수 있습니다. 첫 식사는 저희가 낼게요!
+            </p>
+            <form class="cta-form" name="sign-up" netlify>
+              <div>
+              <label id="full-name">이름</label>
+              <input id="full-name"name="full-name" type="text" placeholder="이학성" required/>
+              </div>
+              <div>
+              <label id="email">이메일</label>
+              <input id="email" name="email" type="email" placeholder="Hakseong@naver.com" required/>
+              </div>
+              <div>
+              <label for="select-where" required>저희를 어떻게 알게되셨나요?</label>
+              <select id="select-where" name="select-where">
+                <option>옵션:</option>
+                <option>지인을 통해서</option>
+                <option>유튜브</option>
+                <option>검색엔진 ex)구글, 네이버</option>
+                <option>SNS ex)Facebook, Instagram</option>
+                <option>다른 경로</option>
+              </select>
+            </div>
+              
+              <button class="btn btn--form">구독하기</button>
+            </form> 
+          </div>
+          <div class="cta-img-box" role="img" aria-label="Woman enjoying food"></div>
+        </div>
+        </div>
+      </section>
+    </main>
+    <footer class="footer">
+      <div class="container grid grid--footer ">
+        <div class="logo-col">
+      <a href="#" class="footer-logo">
+      <img class="logo" alt="logo" src="img/omnifood-logo.png" />
+      </a>
+
+      <ul class="social-links">
+        <li><a class="footer-link" href="#"><ion-icon class="social-icons" name="logo-instagram"></ion-icon></a></li>
+        <li><a class="footer-link" href="#"><ion-icon class="social-icons" name="logo-facebook"></ion-icon></a></li>
+        <li><a class="footer-link" href="#"><ion-icon class="social-icons" name="logo-twitter"></ion-icon></a></li>
+      </ul>
+      <p class="copyright">Copyright &copy; 2022 by Omnifood, Inc. All rights reserved.</p>
+        </div>
+        <div class="address-col">
+          <p class="footer-heading">Contact Us</p>
+          <address class="contacts">
+            <p class="address">부산광역시 동구 조방로 49번길 13, 제일상가아파트 B동 602호</p>
+            <p>
+              <a class="footer-link" href="tel:010-7209-0887">010-7209-0887</a>
+              <a class="footer-link" href="mailto:omnifood@naver.com">Omnifood@naver.com</a>
+            </p>
+          </address>
+          
+        </div>
+        <nav class="nav-col">
+          <p class="footer-heading">Account</p>
+          <ul class="footer-nav">
+            <li><a class="footer-link" href="#">Create acount</a></li>
+            <li><a class="footer-link" href="#">Sign in</a></li>
+            <li><a class="footer-link" href="#">IOS app</a></li>
+            <li><a class="footer-link" href="#">Android app</a></li>
+          </ul>
+        </nav>
+        <nav class="nav-col">         
+           <p class="footer-heading">Company</p>
+          <ul class="footer-nav">
+            <li><a class="footer-link" href="#">About Omnifood</a></li>
+            <li><a class="footer-link" href="#">For Business</a></li>
+            <li><a class="footer-link" href="#">Cooking partners</a></li>
+            <li><a class="footer-link" href="#">Careers</a></li>
+          </ul></nav>
+        <nav class="nav-col">        
+        <p class="footer-heading">Resources</p>
+          <ul class="footer-nav">
+            <li><a class="footer-link" href="#">Recipe directory</a></li>
+            <li><a class="footer-link" href="#">Help center</a></li>
+            <li><a class="footer-link" href="#">Privacy & terms</a></li>
+          </ul></nav>
+
+      </div>
+
+    </footer>
+  </body>
+</html>

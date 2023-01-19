@@ -1,0 +1,293 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Email</title>
+    <style>
+      * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+      }
+      html {
+      }
+      body {
+        /* height: 100vh; */
+        display: grid;
+        grid-template-columns: 80px 400px 1fr 250px;
+        grid-template-rows: 80px 1fr;
+        height: 100vh;
+      }
+      nav {
+        background-color: rgb(26, 26, 26);
+        color: #fff;
+        padding: 50px 16px;
+        display: flex;
+        flex-direction: column;
+        gap: 24px;
+        justify-content: space-between;
+        grid-row: 1/-1;
+
+        /* flex-direction: column; */
+        /* flex-basis: 100%; */
+      }
+      .nav-btn {
+        background-color: rgb(26, 26, 26);
+        border: none;
+      }
+      .nav-btn--icon {
+        width: 34px;
+        height: 34px;
+        background-color: rgb(26, 26, 26);
+        color: #fff;
+        cursor: pointer;
+      }
+      menu {
+        background-color: rgb(100, 69, 184);
+        display: flex;
+        padding: 24px;
+        gap: 18px;
+        justify-content: space-between;
+        align-items: center;
+        grid-column: 2/-1;
+      }
+      .menu-btn {
+        text-decoration: none;
+        font-weight: bold;
+        color: #fff;
+        font-size: 14px;
+        padding: 8px 16px;
+        border-radius: 10px;
+        background-color: rgba(76, 50, 146, 0.774);
+      }
+      .menu-btn:hover {
+        background-color: rgba(62, 42, 119, 0.774);
+      }
+      .menu-btn:last-child {
+        background-color: rgba(201, 51, 101, 0.973);
+        margin-left: auto;
+      }
+      .menu-btn:last-child:hover {
+        background-color: rgba(173, 46, 88, 0.973);
+      }
+      .main {
+        display: flex;
+      }
+
+      main {
+        padding: 20px;
+      }
+      aside {
+        padding: 20px;
+        background-color: rgb(231, 231, 231);
+      }
+      .name-box {
+        margin-bottom: 20px;
+      }
+      section {
+        display: flex;
+        flex-direction: column;
+        padding: 40px 40px;
+        gap: 30px;
+        background-color: rgb(231, 231, 231);
+        overflow: scroll;
+      }
+      .email {
+        padding: 20px;
+        text-align: center;
+        justify-content: center;
+        background-color: rgb(197, 197, 197);
+        cursor: pointer;
+        flex-shrink: 0;
+      }
+      .email:hover {
+        background-color: rgb(175, 175, 175);
+      }
+      .all {
+        height: 100%;
+        width: 100%;
+      }
+
+      h2 {
+        margin-top: 20px;
+        margin-bottom: 30px;
+        text-align: center;
+      }
+      .from {
+        font-style: italic;
+        text-align: right;
+      }
+      .name {
+        font-size: 24px;
+        font-weight: 700;
+      }
+      .reply {
+        border-radius: 5px;
+        border: none;
+        box-shadow: 0 0 1px rgba(0, 0, 0, 0.5);
+        padding: 10px 20px;
+        margin-top: 24px;
+        position: relative;
+        left: 50%;
+        transform: translate(-50%, 0);
+      }
+      .reply:hover {
+        cursor: pointer;
+        background-color: rgb(201, 201, 201);
+      }
+      .text {
+        box-shadow: 0 0 1px rgba(0, 0, 0, 0.5);
+        padding: 10px 10px;
+      }
+    </style>
+  </head>
+  <body>
+    <nav>
+      <button class="nav-btn">
+        <svg
+          xmlns="http://www.w3.org/2000/svg"
+          class="nav-btn--icon"
+          fill="none"
+          viewBox="0 0 24 24"
+          stroke="currentColor"
+        >
+          <path
+            stroke-linecap="round"
+            stroke-linejoin="round"
+            stroke-width="2"
+            d="M8 7V3m8 4V3m-9 8h10M5 21h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v12a2 2 0 002 2z"
+          />
+        </svg>
+      </button>
+      <button class="nav-btn">
+        <svg
+          xmlns="http://www.w3.org/2000/svg"
+          class="nav-btn--icon"
+          fill="none"
+          viewBox="0 0 24 24"
+          stroke="currentColor"
+        >
+          <path
+            stroke-linecap="round"
+            stroke-linejoin="round"
+            stroke-width="2"
+            d="M5 5a2 2 0 012-2h10a2 2 0 012 2v16l-7-3.5L5 21V5z"
+          />
+        </svg>
+      </button>
+      <button class="nav-btn">
+        <svg
+          xmlns="http://www.w3.org/2000/svg"
+          class="nav-btn--icon"
+          fill="none"
+          viewBox="0 0 24 24"
+          stroke="currentColor"
+        >
+          <path
+            stroke-linecap="round"
+            stroke-linejoin="round"
+            stroke-width="2"
+            d="M15 17h5l-1.405-1.405A2.032 2.032 0 0118 14.158V11a6.002 6.002 0 00-4-5.659V5a2 2 0 10-4 0v.341C7.67 6.165 6 8.388 6 11v3.159c0 .538-.214 1.055-.595 1.436L4 17h5m6 0v1a3 3 0 11-6 0v-1m6 0H9"
+          />
+        </svg>
+      </button>
+      <button class="nav-btn">
+        <svg
+          xmlns="http://www.w3.org/2000/svg"
+          class="nav-btn--icon"
+          fill="none"
+          viewBox="0 0 24 24"
+          stroke="currentColor"
+        >
+          <path
+            stroke-linecap="round"
+            stroke-linejoin="round"
+            stroke-width="2"
+            d="M8 12h.01M12 12h.01M16 12h.01M21 12c0 4.418-4.03 8-9 8a9.863 9.863 0 01-4.255-.949L3 20l1.395-3.72C3.512 15.042 3 13.574 3 12c0-4.418 4.03-8 9-8s9 3.582 9 8z"
+          />
+        </svg>
+      </button>
+      <button class="nav-btn">
+        <svg
+          xmlns="http://www.w3.org/2000/svg"
+          class="nav-btn--icon"
+          fill="none"
+          viewBox="0 0 24 24"
+          stroke="currentColor"
+        >
+          <path
+            stroke-linecap="round"
+            stroke-linejoin="round"
+            stroke-width="2"
+            d="M7 16a4 4 0 01-.88-7.903A5 5 0 1115.9 6L16 6a5 5 0 011 9.9M9 19l3 3m0 0l3-3m-3 3V10"
+          />
+        </svg>
+      </button>
+    </nav>
+    <menu>
+      <a href="#" class="menu-btn">New</a>
+      <a href="#" class="menu-btn">Reply</a>
+      <a href="#" class="menu-btn">Forward</a>
+      <a href="#" class="menu-btn">Mark unread</a>
+      <a href="#" class="menu-btn">Trash</a>
+    </menu>
+    <section>
+      <div class="email">Email 1</div>
+      <div class="email">Email 2</div>
+      <div class="email">Email 3</div>
+      <div class="email">Email 4</div>
+      <div class="email">Email 5</div>
+      <div class="email">Email 6</div>
+      <div class="email">Email 7</div>
+      <div class="email">Email 8</div>
+      <div class="email">Email 9</div>
+      <div class="email">Email 10</div>
+    </section>
+
+    <main>
+      <div class="name-box">
+        <span class="name">Hey john, it is Lee.</span>
+        <div>
+          <span class="who"><strong> John </strong></span>
+          <span class="address">&lt;John0924@gmail.com&gt;</span>
+        </div>
+      </div>
+      <div class="text">
+        <p>Dear Smith Family,</p>
+        <p>&nbsp</p>
+        <p>
+          Hello, my name is John. I received a confirmation letter from the exchange organization
+          today. It said I’ll be staying with you for two months later this year. I wanted to
+          introduce myself so you can know a bit more about me.
+        </p>
+        <p>&nbsp</p>
+        <p>
+          I’m 18 years old. I like listening to rock music, playing basketball and reading comic
+          books. I will graduate from high school later this year, and I hope to go to college next
+          year. I’ve never traveled outside of my country, so meeting you and visiting your country
+          will be an exciting, new experience for me!
+        </p>
+        <p>&nbsp</p>
+        <p>
+          I’d also like to know more about you, so if you have a chance, please write back at this
+          email address. If you have any questions for me, I’d be happy to answer them.
+        </p>
+        <p>&nbsp</p>
+        <p>Thanks again for agreeing to host me—I’m very excited to meet you in person!</p>
+        <p>&nbsp</p>
+        <p class="from">--- John ---</p>
+      </div>
+      <button class="reply">Reply</button>
+    </main>
+    <aside>
+      <h2>Additional info</h2>
+      <p>
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Nisi est libero distinctio tempore
+        consequatur. Atque vel assumenda dolor et molestias at, asperiores dignissimos enim quisquam
+        ad tempora temporibus, voluptas quas.
+      </p>
+    </aside>
+  </body>
+</html>

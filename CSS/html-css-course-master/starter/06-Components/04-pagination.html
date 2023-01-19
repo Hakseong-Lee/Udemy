@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>pagination</title>
+    <style>
+      * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+      }
+      body {
+      }
+
+      .container {
+        width: 800px;
+        margin: 300px auto;
+      }
+
+      .btn {
+        display: flex;
+        gap: 20px;
+        justify-content: center;
+        align-items: center;
+      }
+      .right {
+        order: 1;
+      }
+      .left,
+      .right {
+        width: 40px;
+        height: 40px;
+        padding: 8px;
+        border-radius: 50%;
+        border: 1px solid #087f5b;
+        background-color: white;
+      }
+
+      .side:hover {
+        cursor: pointer;
+        background-color: #087f5b;
+      }
+      .side:hover .btn--icon {
+        stroke: white;
+      }
+      .btn--icon {
+        height: 22px;
+        width: 22px;
+        stroke: #087f5b;
+      }
+      .number {
+        display: flex;
+        gap: 18px;
+      }
+
+      .num:link {
+        font-size: 18px;
+        height: 32px;
+        width: 32px;
+        border-radius: 50%;
+        text-decoration: none;
+        background-color: white;
+        display: flex;
+        gap: 20px;
+        align-items: center;
+        justify-content: center;
+      }
+      .num:visited {
+        color: black;
+      }
+      .num:hover,
+      .num:visited:hover,
+      .num.open {
+        background-color: #087f5b;
+        color: white;
+        cursor: pointer;
+        text-decoration: none;
+      }
+
+      .none {
+        border: none;
+        background-color: white;
+        text-decoration: none;
+        cursor: default;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="container">
+      <div class="btn">
+        <button class="side left">
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            class="btn--icon"
+            fill="none"
+            viewBox="0 0 24 24"
+            stroke="currentColor"
+          >
+            <path
+              stroke-linecap="round"
+              stroke-linejoin="round"
+              stroke-width="2"
+              d="M15 19l-7-7 7-7"
+            />
+          </svg>
+        </button>
+        <button class="side right">
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            class="btn--icon"
+            fill="none"
+            viewBox="0 0 24 24"
+            stroke="currentColor"
+          >
+            <path
+              stroke-linecap="round"
+              stroke-linejoin="round"
+              stroke-width="2"
+              d="M9 5l7 7-7 7"
+            />
+          </svg>
+        </button>
+        <div class="number">
+          <a href="#" class="num">1</a>
+          <a href="#" class="num">2</a>
+          <a href="#" class="num open">3</a>
+          <a href="#" class="num">4</a>
+          <a href="#" class="num">5</a>
+          <a href="#" class="num">6</a>
+          <span class="none">...</span>
+          <a href="#" class="num">23</a>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>

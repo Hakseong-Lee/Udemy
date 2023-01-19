@@ -1,0 +1,136 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body {
+  font-family: "Inter", sans-serif;
+  color: #343a40;
+  border-bottom: 8px solid #087f5b;
+}
+.container {
+  width: 960px;
+  margin: 0 auto;
+}
+section {
+  margin-bottom: 96px;
+}
+
+h1 {
+  font-size: 44px;
+  line-height: 1.1;
+  letter-spacing: -1px;
+  margin-bottom: 32px;
+}
+h2 {
+  font-size: 36px;
+  letter-spacing: -1px;
+  margin-bottom: 32px;
+}
+h3 {
+  font-size: 24px;
+  margin-bottom: 20px;
+}
+p {
+  font-size: 18px;
+  line-height: 1.5;
+  margin-bottom: 16px;
+}
+.header-text {
+  margin-bottom: 24px;
+  line-height: 1.5;
+}
+.shop {
+  padding: 16px 32px;
+  background-color: #087f5b;
+  font-size: 18px;
+  color: white;
+  border: none;
+  border-radius: 100px;
+}
+.shop:hover {
+  background-color: #19a77c;
+  cursor: pointer;
+}
+.first {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 80px;
+  margin-top: 64px;
+}
+.grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 80px;
+}
+.pic {
+  border-radius: 15px;
+}
+h4 {
+  font-size: 20px;
+  margin-bottom: 16px;
+}
+.grid-text {
+  font-size: 18px;
+}
+.grid-text {
+  line-height: 1.6;
+}
+.mary-text {
+  grid-column: 2/-1;
+}
+.mary {
+  background-color: #087f5b;
+  color: white;
+  padding: 24px 24px;
+  border-radius: 10px;
+}
+.box {
+  border-radius: 10px;
+  overflow: hidden;
+  box-shadow: 0px 10px 20px -10px rgb(156, 156, 156);
+}
+.box-text {
+  padding: 36px 36px;
+}
+.best-text {
+  margin-bottom: 48px;
+}
+.price {
+  display: flex;
+  justify-content: space-between;
+}
+strong {
+  margin: 0;
+  font-size: 20px;
+}
+.chair-icon {
+  width: 30px;
+  color: #087f5b;
+}
+li {
+  list-style: none;
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  margin-bottom: 16px;
+}
+.cart {
+  padding: 8px 12px;
+  background-color: #087f5b;
+  font-size: 14px;
+  color: white;
+  border: none;
+  border-radius: 100px;
+  box-shadow: 5px 5px gray;
+}
+.cart:hover {
+  background-color: #19a77c;
+  cursor: pointer;
+}
+.cart:active {
+  box-shadow: none;
+}
+footer {
+  margin-bottom: 10px;
+}
