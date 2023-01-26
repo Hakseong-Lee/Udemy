@@ -15,3 +15,22 @@
 // Note: You may assume the string contains only lowercase alphabets.
 
 // Time Complexity - O(n)
+function validAnagram(str1, str2) {
+  let arr1 = {};
+  let arr2 = {};
+  for (let ele of str1) {
+    arr1[ele] = (arr1[ele] || 0) + 1;
+  }
+  for (let ele of str2) {
+    arr2[ele] = (arr2[ele] || 0) + 1;
+  }
+  for (let key in arr1) {
+    if (Object.keys(arr1).length != Object.keys(arr2).length) {
+      return false;
+    }
+    if (arr1[key] != arr2[key]) {
+      return false;
+    }
+  }
+  return true;
+}
